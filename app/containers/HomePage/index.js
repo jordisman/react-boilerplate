@@ -35,7 +35,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch({ type: actionTypes.REMOVE_PERSON, personId: id }),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Persons);
+export default connect(mapStateToProps, mapDispatchToProps)(Persons);
